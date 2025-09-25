@@ -3,9 +3,8 @@ import tkinter.font
 import random
 
 def buttonClick():
-    lotto_num = random.sample(range(1,46),6) # 1~45 사이의 랜덤 숫자 6개 
-    lotto_num.sort() # 정렬
-    print(lotto_num)
+    label = tkinter.Label(window,text=str(random.sample(range(1,46),6))) # 1~45 사이의 랜덤 숫자 6개 
+    label.pack()
 
 window = tkinter.Tk()  # 변수 지정(화면 설정)
 window.title("lotto")  # 제목 설정 
